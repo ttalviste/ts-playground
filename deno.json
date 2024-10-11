@@ -1,8 +1,10 @@
 {
   "tasks": {
-    "dev": "deno run --watch main.ts"
+    "dev": "deno run --watch main.ts",
+    "serve": "deno run --allow-net --watch src/app.ts"
   },
   "imports": {
+    "@oak/oak": "jsr:@oak/oak@^17.1.0",
     "@std/assert": "jsr:@std/assert@1"
   }
 }
